@@ -1,7 +1,8 @@
 import { Reveal, Section, SectionTitle } from "../../utils/ScrollReveal";
 import "./About.css"
+import myimg from "../../assets/images/Me2.jpg"
  
-const stats = [["5+", "Projects"], ["1", "Internship"], ["∞", "Curiosity"]];
+const stats = [["3+", "Projects"], ["1", "Internship"], ["∞", "Curiosity"]];
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
       <div className="about__grid">
         <Reveal dir="left">
           <div className="about__avatar">
-            <img src="dist\assets\images\Me2.jpg" alt="" />
+            <img src={myimg} alt="" />
           </div>
         </Reveal>
         <Reveal dir="right" delay={150}>
