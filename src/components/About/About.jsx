@@ -10,7 +10,7 @@ export default function About() {
       <div className="about__grid">
         <Reveal dir="left">
           <div className="about__avatar">
-            <img src="src\assets\images\Me2.jpg" alt="" />
+            <img src="dist\assets\images\Me2.jpg" alt="" />
           </div>
         </Reveal>
         <Reveal dir="right" delay={150}>

@@ -7,19 +7,19 @@ const PROJECTS = [
     name: "Laptop Price Prediction",
     desc: "ML-powered app predicting laptop prices from specs using Django and scikit-learn, trained on 1300+ data points.",
     tech: ["Django", "Python", "ML", "scikit-learn"],
-    img: "src/assets/images/laptop-pp-mac.jpg",
+    img: "dist/assets/images/laptop-pp-mac.jpg",
   },
   {
     name: "Expense Tracker",
     desc: "Smart expense tracker with category filters, and budget alerts built with vanilla JavaScript.",
     tech: ["JavaScript", "HTML", "CSS"],
-    img: "src/assets/images/Expense tracker.png",
+    img: "dist/assets/images/Expense tracker.png",
   },
   {
     name: "Simple Digital Clock",
     desc: "A simple digital clock built using JavaScript that dynamically displays the current time in hours, minutes, and seconds, updating every second in real-time.",
     tech: ["Javascript", "CSS", "HTML"],
-    img: "src/assets/images/Digi-clock.png",
+    img: "dist/assets/images/Digi-clock.png",
   },
   // {
   //   name: "Cloud File Manager",
