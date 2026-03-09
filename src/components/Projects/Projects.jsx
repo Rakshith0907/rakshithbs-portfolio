@@ -10,19 +10,19 @@ const PROJECTS = [
     name: "Laptop Price Prediction",
     desc: "ML-powered app predicting laptop prices from specs using Django and scikit-learn, trained on 1300+ data points.",
     tech: ["Django", "Python", "ML", "scikit-learn"],
-    img: "/rakshithbs-portfolio/src/assets/images/laptop-pp-mac.jpg",
+    img: lap,
   },
   {
     name: "Expense Tracker",
     desc: "Smart expense tracker with category filters, and budget alerts built with vanilla JavaScript.",
     tech: ["JavaScript", "HTML", "CSS"],
-    img: {exp},
+    img: exp,
   },
   {
     name: "Simple Digital Clock",
     desc: "A simple digital clock built using JavaScript that dynamically displays the current time in hours, minutes, and seconds, updating every second in real-time.",
     tech: ["Javascript", "CSS", "HTML"],
-    img: {clo},
+    img: clo,
   },
   // {
   //   name: "Cloud File Manager",
@@ -33,7 +33,7 @@ const PROJECTS = [
 ];
 
 export default function Projects() {
-  console.log(PROJECTS[0].img)
+  // console.log(PROJECTS[0].img)
   const [hoveredIdx, setHoveredIdx] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
