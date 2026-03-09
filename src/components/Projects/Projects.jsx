@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Reveal, Section, SectionTitle } from "../../utils/ScrollReveal";
-import exp from "../../assets/images/Expense-tracker.png"
-import lap from "../../assets/images/laptop-pp-mac.jpg"
-import clo from "../../assets/images/Digi-clock.png"
+import exp from "../assets/images/Expense-tracker.png"
+import lap from "../assets/images/laptop-pp-mac.jpg"
+import clo from "../assets/images/Digi-clock.png"
 import "./Projects.css"
  
 const PROJECTS = [
