@@ -14,10 +14,10 @@ export default function Connect() {
     if (form.name && form.email && form.message){
 
       setSent(true);
-      console.log(form.name)
-      console.log(form.email)
-      console.log(form.message)
-      console.log(import.meta.env.VITE_EMAIL_SERVICE_ID)
+      // console.log(form.name)
+      // console.log(form.email)
+      // console.log(form.message)
+      // console.log(import.meta.env.VITE_EMAIL_SERVICE_ID)
       emailjs.send(
         import.meta.env.VITE_EMAIL_SERVICE_ID,
         import.meta.env.VITE_EMAIL_TEMPLATE_ID, 
