@@ -3,28 +3,30 @@ import { Reveal, Section, SectionTitle } from "../../utils/ScrollReveal";
 import emailjs from "@emailjs/browser"
 import "./Connect.css";
 
+
 export default function Connect() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sent, setSent] = useState(false);
 
   const handle = (e) => setForm({ ...form, [e.target.name]: e.target.value });
   const submit = () => {
-    // console.log(form.name)
+    
     if (form.name && form.email && form.message){
 
       setSent(true);
-      // console.log(form.name)
-      // console.log(form.email)
-      // console.log(form.message)
+      console.log(form.name)
+      console.log(form.email)
+      console.log(form.message)
+      console.log(import.meta.env.VITE_EMAIL_SERVICE_ID)
       emailjs.send(
-        "service_2qwcvhj", // service id
-        "template_fxvv439", // template id
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID, 
         {
           name: form.name,
           email: form.email,
           message: form.message
         },
-        "uVjFRPsfAqsinijzl"
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY
       )
     } 
 
