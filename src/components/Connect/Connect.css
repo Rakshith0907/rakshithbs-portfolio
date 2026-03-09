@@ -1,0 +1,84 @@
+.connect__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.connect__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.connect__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+}
+
+.connect__input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(99, 179, 237, 0.2);
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.connect__input--focus,
+.connect__input:focus {
+  border-color: #63b3ed;
+}
+
+.connect__input::placeholder {
+  color: #4a5568;
+}
+
+.connect__textarea {
+  resize: vertical;
+}
+
+.connect__btn {
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #2b6cb0, #553c9a);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(99, 179, 237, 0.2);
+}
+
+.connect__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(99, 179, 237, 0.5);
+}
+
+.connect__success {
+  text-align: center;
+  padding: 3rem;
+}
+
+.connect__success-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.connect__success-title {
+  font-family: "Orbitron", sans-serif;
+  color: #63b3ed;
+  margin-bottom: 0.5rem;
+}
+
+.connect__success-sub {
+  font-family: "Space Grotesk", sans-serif;
+  color: #a0aec0;
+}

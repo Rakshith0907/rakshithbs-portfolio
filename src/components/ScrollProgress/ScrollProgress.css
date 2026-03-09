@@ -1,0 +1,57 @@
+.scroll-progress-bar {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.scroll-track {
+  width: 3px;
+  height: 180px;
+  border-radius: 4px;
+  background: rgba(99, 179, 237, 0.12);
+  border: 1px solid rgba(99, 179, 237, 0.15);
+  position: relative;
+  overflow: visible;
+}
+
+.scroll-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, #63b3ed, #9f7aea);
+  border-radius: 4px;
+  transition: height 0.12s linear;
+  box-shadow: 0 0 8px rgba(99, 179, 237, 0.55);
+}
+
+.scroll-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #63b3ed;
+  box-shadow: 0 0 12px #63b3ed, 0 0 4px #fff;
+  transition: top 0.12s linear;
+}
+
+.scroll-label {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.58rem;
+  color: rgba(99, 179, 237, 0.55);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .scroll-progress-bar {
+    display: none;
+  }
+}

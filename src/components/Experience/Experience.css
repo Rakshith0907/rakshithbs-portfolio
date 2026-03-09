@@ -1,0 +1,93 @@
+.experience__timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experience__line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #63b3ed, rgba(99, 179, 237, 0.1));
+}
+
+.experience__item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.experience__dot {
+  position: absolute;
+  left: -2.35rem;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #63b3ed;
+  border: 3px solid #050814;
+  box-shadow: 0 0 12px rgba(99, 179, 237, 0.8);
+}
+
+.experience__card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(99, 179, 237, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  backdrop-filter: blur(10px);
+}
+
+.experience__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.experience__role {
+  font-family: "Orbitron", sans-serif;
+  color: #e2e8f0;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.experience__company {
+  font-family: "Space Grotesk", sans-serif;
+  color: #63b3ed;
+  font-size: 0.9rem;
+}
+
+.experience__date {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
+  color: #9f7aea;
+  background: rgba(159, 122, 234, 0.1);
+  border: 1px solid rgba(159, 122, 234, 0.3);
+  border-radius: 20px;
+  padding: 4px 14px;
+  white-space: nowrap;
+}
+
+.experience__bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.experience__bullet {
+  font-family: "Space Grotesk", sans-serif;
+  color: #a0aec0;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.experience__bullet-icon {
+  color: #63b3ed;
+  flex-shrink: 0;
+}

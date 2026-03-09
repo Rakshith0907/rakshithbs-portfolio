@@ -1,0 +1,126 @@
+.projects__layout {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.projects__list {
+  flex: 1;
+}
+
+.project-item {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(99, 179, 237, 0.1);
+  border-radius: 8px;
+  cursor: default;
+  background: transparent;
+  transition: background 0.3s;
+}
+
+.project-item--active {
+  background: rgba(99, 179, 237, 0.05);
+}
+
+.project-item__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-item__num {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.9rem;
+  color: #4a5568;
+  transition: color 0.3s;
+}
+
+.project-item--active .project-item__num {
+  color: #63b3ed;
+}
+
+.project-item__name {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  color: #e2e8f0;
+  transition: color 0.3s;
+}
+
+.project-item--active .project-item__name {
+  color: #63b3ed;
+}
+
+.project-item__desc {
+  font-family: "Space Grotesk", sans-serif;
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  padding-left: 2.5rem;
+}
+
+.project-item__tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-left: 2.5rem;
+}
+
+.tag {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  color: #63b3ed;
+  background: rgba(99, 179, 237, 0.1);
+  border: 1px solid rgba(99, 179, 237, 0.25);
+  border-radius: 3px;
+  padding: 2px 10px;
+}
+
+.project-item__img-mobile {
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 180px;
+}
+
+.project-item__img-mobile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Desktop preview panel */
+.projects__preview {
+  width: 320px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 120px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  /* border: 1px solid rgba(99, 179, 237, 0.2); */
+  border: 1px solid transparent;
+  /* background: rgba(255, 255, 255, 0.03); */
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects__preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeIn 0.35s ease;
+  border: 1px solid rgba(99, 179, 237, 0.2);
+}
+
+.projects__preview-hint {
+  font-family: "Space Grotesk", sans-serif;
+  color: #4a5568;
+  font-size: 0.85rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}

@@ -1,0 +1,42 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(99, 179, 237, 0.1);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  font-family: "Space Grotesk", sans-serif;
+  color: #718096;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer__link:hover {
+  color: #63b3ed;
+}
+
+.footer__copy {
+  font-family: "Space Grotesk", sans-serif;
+  color: #4a5568;
+  font-size: 0.85rem;
+}
+
+.footer__name {
+  color: #63b3ed;
+}
