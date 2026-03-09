@@ -10,7 +10,7 @@ const PROJECTS = [
     name: "Laptop Price Prediction",
     desc: "ML-powered app predicting laptop prices from specs using Django and scikit-learn, trained on 1300+ data points.",
     tech: ["Django", "Python", "ML", "scikit-learn"],
-    img: {lap},
+    img: "/rakshithbs-portfolio/src/assets/images/laptop-pp-mac.jpg",
   },
   {
     name: "Expense Tracker",
@@ -33,6 +33,7 @@ const PROJECTS = [
 ];
 
 export default function Projects() {
+  console.log(PROJECTS[0].img)
   const [hoveredIdx, setHoveredIdx] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
