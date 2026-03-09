@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./ScrollProgress.css"
- 
+  
 export default function ScrollProgress() {
   const [pct, setPct] = useState(0);
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function ScrollProgress() {
         <div className="scroll-fill" style={{ height: `${pct}%` }} />
         <div className="scroll-dot" style={{ top: `calc(${pct}% - 5px)` }} />
       </div>
-      <span className="scroll-label">{Math.round(pct)}%</span>
+      {/* <span className="scroll-label">{Math.round(pct)}%</span> */}
     </div>
   );
 }

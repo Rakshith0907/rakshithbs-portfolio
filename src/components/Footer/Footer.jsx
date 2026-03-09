@@ -18,7 +18,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="footer__copy">
-          Designed & Built by <span className="footer__name">Rakshith BS</span> · {new Date().getFullYear()}
+          Designed & Built with<span className="footer__name"> React<i className="fa-brands fa-react"></i></span> by <span className="footer__name">Rakshith BS</span> · {new Date().getFullYear()}
         </p>
       </div>
     </footer>
