@@ -22,7 +22,7 @@ export default function About() {
               backends — I enjoy every layer of the stack.
             </p>
             <p className="about__para">
-              When I'm not coding, I explore machine learning, contribute to open source, and chase
+              When I'm not coding, I explore modern fontend trends, contribute to open source, and chase
               the perfect cup of coffee ☕. I believe great software is where engineering meets artistry.
             </p>
             <div className="about__stats">
